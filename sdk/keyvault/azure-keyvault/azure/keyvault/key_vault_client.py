@@ -19,6 +19,7 @@ from .version import VERSION
 from . import KeyVaultAuthentication
 
 from azure.keyvault.v7_0.version import VERSION as v7_0_VERSION
+from azure.keyvault.v7_3_preview.version import VERSION as v7_3_PREVIEW_VERSION
 from azure.keyvault.v2016_10_01.version import VERSION as v2016_10_01_VERSION
 
 
@@ -106,6 +107,8 @@ class KeyVaultClient(MultiApiClientMixin):
 
         if api_version == v7_0_VERSION:
             from azure.keyvault.v7_0 import models as implModels
+        elif api_version == v7_3_PREVIEW_VERSION:
+            from azure.keyvault.v7_3_preview import models as implModels
         elif api_version == v2016_10_01_VERSION:
             from azure.keyvault.v2016_10_01 import models as implModels
         else:
@@ -130,6 +133,8 @@ class KeyVaultClient(MultiApiClientMixin):
         """
         if api_version == v7_0_VERSION:
             from azure.keyvault.v7_0 import KeyVaultClient as ImplClient
+        elif api_version == v7_3_PREVIEW_VERSION:
+            from azure.keyvault.v7_3_preview import KeyVaultClient as ImplClient
         elif api_version == v2016_10_01_VERSION:
             from azure.keyvault.v2016_10_01 import KeyVaultClient as ImplClient
         else:
