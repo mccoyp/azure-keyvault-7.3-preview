@@ -1,0 +1,26 @@
+# See for instructions on this file https://help.github.com/articles/about-codeowners/
+
+/sdk/core/ @lmazuel
+/sdk/core/azure-core/ @xiangyan99 @bryevdv
+
+# Service team
+/sdk/applicationinsights/ @alexeldeib
+/sdk/batch/ @bgklein @matthchr @xingwu1
+/sdk/cognitiveservices/azure-cognitiveservices-vision-customvision/ @areddish
+/sdk/keyvault/ @schaabs @chlowell
+/sdk/loganalytics/ @alexeldeib
+/sdk/consumption/ @sandeepnl
+/sdk/containerinstance/ @samkreter @xizhamsft
+/sdk/containerregistry/ @djyou 
+/sdk/containerservice/ @samkreter @zqingqing1 @GaneshaThirumurthi
+/sdk/cosmos/ @dmakwana
+/sdk/datafactory/ @hvermis
+/sdk/datalake/ @ro-joowan
+/sdk/datadatamigration/ @vchske
+/sdk/eventgrid/ @kalyanaj
+/sdk/hdinsight/ @idear1203
+/sdk/machinelearningcompute/ @shutchings
+/sdk/recoveryservices/ @DheerendraRathor
+/sdk/servicefabric/ @QingChenmsft @samedder
+/sql/sql/ @jaredmoo
+/sdk/servicebus/azure-servicebus/ @annatisch
